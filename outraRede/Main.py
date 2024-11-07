@@ -12,7 +12,7 @@ saida_neuronios = 9  # neuronios de saida (posicao tabuleiro)
 rede = RedeNeural(camadas, neuronios_por_camada, saida_neuronios)
 
 # a entrada representa um estado atual de um tabuleiro de jogo da velha
-entradas = [random.uniform(-1, 1) for _ in range(neuronios_por_camada)]
+entradas = [1, 0, 0, 0, 0, 0, 0, 0, 0]
 
 # propagacao da rede
 posicao_escolhida = rede.propagacao(entradas)
