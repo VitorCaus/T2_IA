@@ -1,0 +1,149 @@
+9 Posições de entrada -> tabuleiro processado pela rede
+
+x1 x2 x3
+x4 x5 x6
+x7 x8 x9
+
+
+saída é um tabuleiro => 9 posíções de saída
+
+P1 P2 P3
+P4 P5 P6
+P7 P8 P9
+
+Camada oculta: sugestão = começar com 9 neurônios
+
+9 X 9 X 9
+
+Topologia deve ser implementada
+- criar neurônios c/ conexões
+- propagar conexões (loop)
+- cada camada = lista/array de Neuronio
+
+9 X 9 X 9
+cada neurônio tem 10 pesos (9 + 1 bias)
+90 pesos na camada oculta
+90 na saída 
+==> 180 pesos p/ atualizar (valores virão do algoritmo genético)
+
+
+
+ALG GEN.
+
+cada linha da população terá 180 pesos (0-179) - cada linha representa 1 instância de rede
+números aleatórios são gerados p/ definir a pop. (intervalo de [-1, 1])
+
+-> logo após a geração, avalia cada linha com a aptidão
+
+
+função de Aptidão = desempenho da rede jogando contra o minimax 
+
+lembrar que de 10 em 10 há um neurônio, ao instanciar a rede que vai jogar
+
+NUMA EXECUÇÃO DE UMA GERAÇÃO DO ALG. GENETICO, O MINIMAX JOGA SEMPRE NO MESMO MODO 
+(todas as linhas contra o minimax no mesmo modo, passa p/ próx. geração, escolhe modo aleatório...)
+
+
+No caso da rede jogar numa célula ocupada:
+- Penaliza, a aptidão gera uma nota baixa (para o jogo e já devolve o valor ruim)
+
+função deve distinguir jogada boa, empate, vitória/derrota, jogada indisponível, qtd de jogadas
+-> valorizar corretamente cada caso
+Ex: jogar em posição ocupada é ruim (retorna valor baixo). Derrota também, mas é melhor que jogar em local ocupado(retorna valor baixo, mas melhor)
+
+
+ELITISMO: PEGAR O DE MAIOR APTIDÃO E PASSAR P/ PRÓXIMO
+-> a partir da geração 0, a posição 0 da tabela de população deve ter a rede mais apta
+
+RANDOMIZA PARES P/ ESCOLHER PAI/MÃE
+
+-> No nosso caso, teremos que alterar o valor ao invés de trocar a posição
+
+-> Mais simples = Crossover média (ver cap. Lacerda, página 24)
+
+MUTAÇÃO = estabelecer uma taxa e alterar algum neurônio (ou por ex. entre 1 e 3 neuronios) 
+de uma rede entre rede 1 e 180 (não pegar da 0 pra proteger a mais apta)
+
+
+PROPAGAÇÃO ENTRE CAMADAS:
+
+
+
+Ver slide MLP - exemplo XOR (pág 95, 96, 97)
+
+
+os y1, y2, y3 -> guardar em vetor p/ reaproveitar no cálcula na próxima camada
+
+
+Dica
+-----------------------------
+-> usar func logistica
+
+classe Neurônio:
+terá uma lista de neuronio
+
+-> array de pesos com 10 posições (9 + 1 bias) -> vêm do alg. genético quando instânciar 
+    -> pesos das próximas camadas, 
+
+vetorEntrada (vetor de 9 posições)
+  - se neurônio em camada oculta, é o tabuleiro
+  - se neurônio na saída, os y's da camada oculta anterior
+
+-> método p/ propagação(vetorEntrada[9], )
+  x' = novo array, onde: [1, vetorEntrada[0], vetorEntrada[1], ... vetorEntrada[8]]
+
+  for(i = 0, i < 10, i++){
+    S = S + x'[i] * vetorEntrada[i]
+
+  }
+  y = f(S) -> onde f = Logística | TangH | relu
+
+___________________
+  logistica = 1/(1 + exp(-S))
+  TangH = tanh(S)
+----------------------------
+
+!!!!!!!!! = crossover do código no moodle não serve
+sobre crossover:
+- o uniponto (código no moodle) dá problema. Devemos usar média(ver cap. Lacerda, página 24)
+
+
+-> torneio, elitismo, etc é igual. única mudança é o crossover
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

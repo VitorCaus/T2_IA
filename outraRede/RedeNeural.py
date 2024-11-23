@@ -17,11 +17,11 @@ class Neuronio:
         return math.tanh(soma) # tangente hiperbolica
 
 class RedeNeural:
-    def __init__(self, camadas, neuronios, saidas):
+    def __init__(self, camadas, neuronios, saidas, pesos):
         self.camadas = camadas
         self.neuronios = neuronios
         self.saidas = saidas
-        self.pesos = self.inicializaPesos() # substituir por algoritmo genetico para gerar os pesos
+        self.pesos = pesos 
         self.neuronios_camadas = self.cria_neuronio()
 
     def inicializaPesos(self):
@@ -55,7 +55,7 @@ class RedeNeural:
             for neuronio in camada:
                 saidas.append(neuronio.propagacao(entradas))
             entradas = saidas
-        print("Valores neuronios de saida:", saidas)
+        # print("Valores neuronios de saida:", saidas)
         # encontrando o maior valor dos neuronios de saida. isso representa a posicao a ser jogada
         max_index = saidas.index(max(saidas))
         return max_index

@@ -34,6 +34,7 @@ def tanh(x):
 
 def main(tabuleiro, pesos):
     # pesos aleatorios (alterar para receber do genetico)
+    # random.seed(42)
     pesosAux = [random.uniform(-1, 1) for i in range(180)]
     camada_oculta = [];
     camada_saida = [];
