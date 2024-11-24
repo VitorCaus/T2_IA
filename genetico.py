@@ -62,10 +62,6 @@ def aptidao(individuo):
             
             tabuleiro[melhor_posicao] = 1
 
-            #atualiza tabuleiro minimax
-            # tabuleiro_letras = convert_board_letters(tabuleiroRede)
-            # tabuleiro = [tabuleiro_letras[i:i + 3] for i in range(0, 9, 3)]
-
             if(check_winner(tabuleiro, 1)):
                 print(f"TABULEIRO (REDE {individuo} VENCE):\n")
                 print_board()
@@ -74,6 +70,7 @@ def aptidao(individuo):
         else:#minimax - jogando como O
             print("Minimax joga")
             computer_move()#tabuleiro tambem atualizado nessa funcao
+
             if(check_winner(tabuleiro, -1)):
                 aptidao = MINIMAX_GANHOU
                 print("TABULEIRO (MINIMAX VENCE):\n")
@@ -110,13 +107,15 @@ def get_mais_apto():
 
 
 def torneio():
-    ind1, ind2 = random.sample(range(0, tam_populacao), 2)
+    # ind1, ind2 = random.sample(range(0, tam_populacao), 2)
+    ind1 = random.randint(0, tam_populacao-1)
+    ind2 = random.randint(0, tam_populacao-1)
     return ind1 if populacao[ind1][TAM_CROMOSSOMO] > populacao[ind2][TAM_CROMOSSOMO] else ind2
 
 
 def crossover():
     # Cruzamento media
-    for j in range(1, tam_populacao, 2):
+    for j in range(1, tam_populacao):
         ind1 = torneio()
         ind2 = torneio()
 
@@ -126,76 +125,70 @@ def crossover():
         intermediaria[j] = (cromossomo1 + cromossomo2)/2
 
 
+# def mutacao():
+#     quant = random.randint(1, 5)
+#     for i in range(quant):
+#         individuo = random.randint(1, tam_populacao-1)
+
+#         num_mudancas = random.randint(1, 10)
+#         for j in range(num_mudancas):
+#             posicao = random.randint(0, TAM_CROMOSSOMO-1)
+#             print(f"Cromossomo {individuo} sofreu mutação no peso {posicao}")
+#             populacao[individuo][posicao] = random.uniform(-1, 1)   
+
 def mutacao():
-    quant = random.randint(1, 3)
-    for i in range(quant):
-        individuo = random.randint(1, tam_populacao-1)
-        posicao = random.randint(0, TAM_CROMOSSOMO-1)
-        print(f"Cromossomo {individuo} sofreu mutação no peso {posicao}")
-        populacao[individuo][posicao] = random.uniform(-1, 1)   
+    taxa_mutacao = 0.02
+    for individuo in range(1, tam_populacao):  
+        for posicao in range(TAM_CROMOSSOMO):
+            if random.random() < taxa_mutacao:
+                print(f"Cromossomo {individuo} sofreu mutação no peso {posicao}")
+                populacao[individuo][posicao] = random.uniform(-1, 1)
 
 
-def achou_solucao(melhor):
-    # if populacao[melhor][TAM_CROMOSSOMO] == 0:
-    #     print(f"\nAchou a solução ótima. Ela corresponde ao cromossomo: {melhor}")
-    #     print("Solução Decodificada:")
-    #     for pessoa in range(2):
-    #         soma = 0
-    #         print(f"Pessoa {pessoa}: ", end="")
-    #         for i in range(TAM_CROMOSSOMO):
-    #             if populacao[melhor][i] == pessoa:
-    #                 print(TAM_CROMOSSOMO, end=" ")
-    #                 # soma += cargas[i]
-    #         print(f"- Total: {soma}")
-    #     return True
-    return False
 
 # ---------------------------------------------------------------------------------------------------------
-def minimax(tabuleiro, depth, is_maximizing):
-    if check_winner(tabuleiro, -1):
+def minimax(board, depth, is_maximizing):
+    if check_winner(board, -1):
         return 1
-    if check_winner(tabuleiro, 1):
+    if check_winner(board, 1):
         return -1
-    if is_full(tabuleiro):
+    if is_full(board):
         return 0
 
     if is_maximizing:
         best_score = -float('inf')
         for i in range(9):
-            # for j in range(3):
-                if tabuleiro[i] == 0:
-                    tabuleiro[i] = -1
-                    score = minimax(tabuleiro, depth + 1, False)
-                    tabuleiro[i] = 0
+                if board[i] == 0:
+                    board[i] = -1
+                    score = minimax(board, depth + 1, False)
+                    board[i] = 0
                     best_score = max(score, best_score)
         return best_score
     else:
         best_score = float('inf')
         for i in range(9):
-            # for j in range(3):
-                if tabuleiro[i] == 0:
-                    tabuleiro[i] = 1
-                    score = minimax(tabuleiro, depth + 1, True)
-                    tabuleiro[i] = 0
+                if board[i] == 0:
+                    board[i] = 1
+                    score = minimax(board, depth + 1, True)
+                    board[i] = 0
                     best_score = min(score, best_score)
         return best_score
 
 # Função para escolher a melhor jogada usando Minimax
-def best_move(tabuleiro):
+def best_move(board):
     best_score = -float('inf')
     move = None
     for i in range(9):
-        # for j in range(3):
-            if tabuleiro[i] == 0:
-                tabuleiro[i] = -1
-                score = minimax(tabuleiro, 0, False)
-                tabuleiro[i] = 0
+            if board[i] == 0:
+                board[i] = -1
+                score = minimax(board, 0, False)
+                board[i] = 0
                 if score > best_score:
                     best_score = score
                     move = i
     return move
 
-def check_winner(tabuleiro, player):
+def check_winner(board, player):
     posicoes_vitoria = [
         [0, 1, 2],  #linha1
         [3, 4, 5],  #linha2
@@ -208,15 +201,15 @@ def check_winner(tabuleiro, player):
     ]
 
     for linha in posicoes_vitoria:
-        if all(tabuleiro[i] == player for i in linha):
+        if all(board[i] == player for i in linha):
             return True
 
     return False
 
 
 # Função para verificar se o tabuleiro está cheio
-def is_full(tabuleiro):
-    return all(tabuleiro[i] != 0 for i in range(9))
+def is_full(board):
+    return all(board[i] != 0 for i in range(9))
 
 def computer_move():
     use_minimax = 0
@@ -230,40 +223,20 @@ def computer_move():
         #100% de chance
         use_minimax = True
 
+    move = None
+
     if use_minimax:
         move = best_move(tabuleiro)
-    else:
+
+    if move is None:
         empty_cells = [i for i in range(9) if tabuleiro[i] == 0]
         move = random.choice(empty_cells)
-
-    if move:
-        tabuleiro[move] = -1
+        
+    tabuleiro[move] = -1
 
 
 def random_difficulty():
     return random.choice(['facil','medio','dificil'])
-
-def convert_board_numbers(board):
-    converted = board.copy()
-    for i in range (0, 9, 1):
-        if(converted[i] == 'X'): 
-            converted[i] = 1
-        elif(converted[i] == 'O'): 
-            converted[i] = -1
-        else: 
-            converted[i] = 0
-    return converted
-
-def convert_board_letters(board):
-    converted = board.copy()
-    for i in range (0, 9, 1):
-        if(converted[i] == 1): 
-            converted[i] = 'X'
-        elif(converted[i] == -1): 
-            converted[i] = 'O'
-        else: 
-            converted[i] = '_'
-    return converted
 
 def print_board():
     converted = tabuleiro.copy()
@@ -290,7 +263,7 @@ def main():
         print("ERRO: uso = python ./genetico.py <tam_populacao>")
         return
     
-    random.seed()
+    # random.seed()
 
     tam_populacao = int(sys.argv[1])
 
@@ -301,21 +274,24 @@ def main():
     tabuleiro = init_tabuleiro()
 
     init()
-    for g in range(1):
-        print(f"Geração: {g}")
+    for g in range(300):
+        print(f"\n -==<| Geração: {g} |>==-")
         dificuldade = random_difficulty()
         print(f"Dificuldade para Minimax = {dificuldade.capitalize()}")
         calcula_aptidao()
-        print_matriz()
+        # print_matriz()
         melhor = get_mais_apto()
         print(f"Melhor Rede Elitismo = {melhor} - (APT = {populacao[melhor][TAM_CROMOSSOMO]})")
-        # if achou_solucao(melhor):
-        #     break
+        
+        aptidoes = open("aptidoes.txt", "a")
+        aptidoes.write(f"{melhor} -> APT = {populacao[melhor][TAM_CROMOSSOMO]}\n")
+        aptidoes.close()
+
         crossover()
-        # global populacao
         populacao = [row[:] for row in intermediaria]
-        if random.randint(0, 4) == 0:
-            print("Mutação")
+        aleatorio = random.randint(0, 9)
+        if aleatorio <= 2:
+            print("\n===< MUTAÇÃO >===")
             mutacao()
     # print_matriz()
     
