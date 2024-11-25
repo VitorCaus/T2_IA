@@ -1,300 +1,400 @@
-0 -> APT = -3000
-2 -> APT = -150.0
-0 -> APT = -150.0
-0 -> APT = -3000.0
-0 -> APT = -5000.0
-0 -> APT = -150.0
-7 -> APT = -150.0
-0 -> APT = -150.0
-2 -> APT = -150.0
-5 -> APT = -150.0
-0 -> APT = -150.0
-3 -> APT = -3000.0
-0 -> APT = -150.0
-7 -> APT = -150.0
-1 -> APT = -3000.0
-0 -> APT = -150.0
-1 -> APT = -150.0
-3 -> APT = -50.0
-0 -> APT = -150.0
-4 -> APT = -150.0
-0 -> APT = -150.0
-0 -> APT = -150.0
-0 -> APT = -150.0
-0 -> APT = -150.0
-0 -> APT = -150.0
-0 -> APT = -150.0
-0 -> APT = -150.0
-8 -> APT = -150.0
-2 -> APT = -150.0
-0 -> APT = -150.0
-0 -> APT = -150.0
-9 -> APT = -50.0
-6 -> APT = -150.0
-3 -> APT = -3000.0
-6 -> APT = -150.0
-0 -> APT = -150.0
-1 -> APT = -3000.0
-0 -> APT = -150.0
-0 -> APT = -150.0
-0 -> APT = -150.0
-0 -> APT = -150.0
-7 -> APT = -150.0
-2 -> APT = -150.0
-0 -> APT = -150.0
-6 -> APT = -150.0
-3 -> APT = -150.0
-0 -> APT = -150.0
-9 -> APT = -150.0
-0 -> APT = -150.0
-0 -> APT = -5000.0
-0 -> APT = 4000.0
-0 -> APT = -150.0
-6 -> APT = 2000.0
-1 -> APT = 2000.0
-0 -> APT = -150.0
-3 -> APT = 2000.0
-7 -> APT = -150.0
-5 -> APT = -1000.0
-7 -> APT = -150.0
-2 -> APT = -150.0
-3 -> APT = -150.0
-4 -> APT = 2000.0
-2 -> APT = 4000.0
-1 -> APT = -3000.0
-0 -> APT = -150.0
-0 -> APT = -150.0
-1 -> APT = 4000.0
-7 -> APT = 4000.0
-8 -> APT = 2000.0
-0 -> APT = 4000.0
-2 -> APT = 4000.0
-5 -> APT = 2000.0
-7 -> APT = 2000.0
-9 -> APT = 4000.0
-0 -> APT = 4000.0
-1 -> APT = 4000.0
-0 -> APT = -150.0
-7 -> APT = 4000.0
-7 -> APT = 2000.0
-0 -> APT = -150.0
-2 -> APT = 4000.0
-8 -> APT = 4000.0
-0 -> APT = -150.0
-0 -> APT = 4000.0
-7 -> APT = 2000.0
-0 -> APT = -150.0
-2 -> APT = 4000.0
-0 -> APT = 4000.0
-2 -> APT = -150.0
-1 -> APT = 4000.0
-0 -> APT = -5000.0
-4 -> APT = -150.0
-5 -> APT = 2000.0
-0 -> APT = -3000.0
-0 -> APT = 2000.0
-4 -> APT = 4000.0
-0 -> APT = -3000.0
-4 -> APT = 4000.0
-0 -> APT = 2000.0
-4 -> APT = 2000.0
-0 -> APT = -150.0
-0 -> APT = -150.0
-0 -> APT = 2000.0
-0 -> APT = 2000.0
-0 -> APT = -150.0
-0 -> APT = -150.0
-9 -> APT = 2000.0
-5 -> APT = 4000.0
-9 -> APT = 2000.0
-0 -> APT = -150.0
-5 -> APT = 4000.0
-5 -> APT = 4000.0
-0 -> APT = 4000.0
-0 -> APT = -150.0
-0 -> APT = 4000.0
-4 -> APT = 4000.0
-0 -> APT = -150.0
-0 -> APT = -150.0
-0 -> APT = -150.0
-0 -> APT = -150.0
-8 -> APT = 4000.0
-6 -> APT = 4000.0
-4 -> APT = 4000.0
-0 -> APT = -150.0
-6 -> APT = -3000.0
-5 -> APT = -150.0
-1 -> APT = 4000.0
-3 -> APT = 4000.0
-3 -> APT = 2000.0
-1 -> APT = 4000.0
-0 -> APT = -150.0
-5 -> APT = 4000.0
-3 -> APT = 4000.0
-2 -> APT = -150.0
-0 -> APT = -150.0
-4 -> APT = -150.0
-0 -> APT = -150.0
-8 -> APT = -150.0
-0 -> APT = -150.0
-0 -> APT = -150.0
-0 -> APT = -150.0
-4 -> APT = -150.0
-0 -> APT = -150.0
-0 -> APT = -150.0
-0 -> APT = -150.0
-0 -> APT = -150.0
-0 -> APT = -150.0
-1 -> APT = -150.0
-0 -> APT = -150.0
-1 -> APT = -150.0
-0 -> APT = -3000.0
-1 -> APT = -150.0
-1 -> APT = -150.0
-2 -> APT = -150.0
-2 -> APT = -150.0
-1 -> APT = -3000.0
-0 -> APT = -150.0
-1 -> APT = -150.0
-0 -> APT = -150.0
-0 -> APT = -150.0
-4 -> APT = -150.0
-0 -> APT = -150.0
-8 -> APT = -150.0
-0 -> APT = -150.0
-5 -> APT = -150.0
-1 -> APT = -150.0
-6 -> APT = -150.0
-1 -> APT = -150.0
-1 -> APT = -150.0
-1 -> APT = -150.0
-0 -> APT = -150.0
-0 -> APT = -150.0
-0 -> APT = -150.0
-0 -> APT = -150.0
-0 -> APT = -150.0
-0 -> APT = -150.0
-3 -> APT = -150.0
-8 -> APT = -150.0
-2 -> APT = -150.0
-8 -> APT = -150.0
-1 -> APT = -150.0
-1 -> APT = -3000.0
-0 -> APT = -150.0
-3 -> APT = -3000.0
-2 -> APT = -150.0
-5 -> APT = -150.0
-1 -> APT = -150.0
-0 -> APT = 4000.0
-2 -> APT = -3000.0
-1 -> APT = -150.0
-0 -> APT = -3000.0
-6 -> APT = -150.0
-1 -> APT = -150.0
-5 -> APT = -150.0
-0 -> APT = -150.0
-0 -> APT = -150.0
-1 -> APT = -150.0
-5 -> APT = -150.0
-3 -> APT = -150.0
-3 -> APT = -150.0
-0 -> APT = -150.0
-0 -> APT = -150.0
-2 -> APT = -150.0
-0 -> APT = -150.0
-0 -> APT = -150.0
-0 -> APT = -150.0
-1 -> APT = -3000.0
-0 -> APT = -3000.0
-0 -> APT = -150.0
-0 -> APT = -150.0
-4 -> APT = -150.0
-5 -> APT = -150.0
-0 -> APT = -150.0
-6 -> APT = -150.0
-1 -> APT = -150.0
-0 -> APT = -150.0
-0 -> APT = -150.0
-4 -> APT = -3000.0
-8 -> APT = 4000.0
-8 -> APT = 2000.0
-0 -> APT = -150.0
-0 -> APT = -150.0
-3 -> APT = 2000.0
-0 -> APT = -150.0
-2 -> APT = -150.0
-7 -> APT = 4000.0
-7 -> APT = -150.0
-0 -> APT = 4000.0
-0 -> APT = -150.0
-7 -> APT = 2000.0
-1 -> APT = -3000.0
-3 -> APT = -3000.0
-1 -> APT = -150.0
-3 -> APT = 4000.0
-8 -> APT = 2000.0
-1 -> APT = -150.0
-0 -> APT = -150.0
-0 -> APT = -150.0
-7 -> APT = 2000.0
-0 -> APT = -150.0
-1 -> APT = 2000.0
-5 -> APT = -150.0
-5 -> APT = 4000.0
-0 -> APT = -150.0
-6 -> APT = -150.0
-0 -> APT = -150.0
-0 -> APT = -150.0
-0 -> APT = -150.0
-0 -> APT = -150.0
-0 -> APT = -150.0
-0 -> APT = 4000.0
-7 -> APT = 4000.0
-2 -> APT = 4000.0
-6 -> APT = 2000.0
-7 -> APT = 4000.0
-0 -> APT = -150.0
-0 -> APT = -150.0
-5 -> APT = 4000.0
-5 -> APT = -3000.0
-0 -> APT = -150.0
-4 -> APT = -150.0
-0 -> APT = -150.0
-0 -> APT = -150.0
-0 -> APT = -150.0
-2 -> APT = -150.0
-1 -> APT = -150.0
-2 -> APT = -3000.0
-0 -> APT = -150.0
-0 -> APT = 2000.0
-4 -> APT = 2000.0
-0 -> APT = -150.0
-0 -> APT = -150.0
-7 -> APT = -150.0
-0 -> APT = -150.0
-0 -> APT = -150.0
-4 -> APT = 2000.0
-3 -> APT = -150.0
-2 -> APT = -150.0
-3 -> APT = 2000.0
-3 -> APT = 2000.0
-0 -> APT = -150.0
-5 -> APT = 4000.0
-9 -> APT = 4000.0
-0 -> APT = 4000.0
-8 -> APT = 4000.0
-1 -> APT = -150.0
-2 -> APT = 4000.0
-5 -> APT = -3000.0
-4 -> APT = -150.0
-0 -> APT = -5000.0
-2 -> APT = -3000.0
-1 -> APT = -150.0
-1 -> APT = 4000.0
-7 -> APT = -150.0
-0 -> APT = -150.0
-0 -> APT = -150.0
-0 -> APT = -150.0
-1 -> APT = -150.0
-4 -> APT = 4000.0
-0 -> APT = -150.0
+1 -> APT = -5000 DIF = dificil
+0 -> APT = -5000 DIF = facil
+14 -> APT = -150.0 DIF = medio
+6 -> APT = -150.0 DIF = dificil
+3 -> APT = 4000.0 DIF = medio
+7 -> APT = -3000.0 DIF = medio
+2 -> APT = -3000.0 DIF = medio
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = medio
+0 -> APT = -150.0 DIF = dificil
+7 -> APT = 4000.0 DIF = facil
+6 -> APT = 4000.0 DIF = medio
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+7 -> APT = -3000.0 DIF = facil
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+11 -> APT = -150.0 DIF = facil
+0 -> APT = -150.0 DIF = dificil
+3 -> APT = -150.0 DIF = facil
+10 -> APT = -150.0 DIF = medio
+7 -> APT = -3000.0 DIF = medio
+5 -> APT = -50.0 DIF = medio
+1 -> APT = -150.0 DIF = dificil
+1 -> APT = -50.0 DIF = medio
+11 -> APT = -50.0 DIF = medio
+6 -> APT = -3000.0 DIF = facil
+0 -> APT = -150.0 DIF = medio
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -1000.0 DIF = facil
+11 -> APT = -150.0 DIF = facil
+4 -> APT = -150.0 DIF = facil
+0 -> APT = -150.0 DIF = medio
+2 -> APT = -150.0 DIF = medio
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = medio
+3 -> APT = -150.0 DIF = medio
+3 -> APT = -3000.0 DIF = facil
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+2 -> APT = -150.0 DIF = medio
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+1 -> APT = -3000.0 DIF = facil
+0 -> APT = -150.0 DIF = dificil
+2 -> APT = 4000.0 DIF = medio
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+7 -> APT = -150.0 DIF = facil
+1 -> APT = -150.0 DIF = facil
+3 -> APT = -150.0 DIF = medio
+0 -> APT = -150.0 DIF = dificil
+5 -> APT = -150.0 DIF = medio
+1 -> APT = -150.0 DIF = medio
+0 -> APT = -150.0 DIF = dificil
+2 -> APT = -150.0 DIF = facil
+2 -> APT = -150.0 DIF = medio
+2 -> APT = -150.0 DIF = medio
+4 -> APT = -150.0 DIF = medio
+10 -> APT = -150.0 DIF = facil
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+2 -> APT = -3000.0 DIF = facil
+0 -> APT = -150.0 DIF = dificil
+2 -> APT = -150.0 DIF = medio
+11 -> APT = -50.0 DIF = facil
+1 -> APT = -3000.0 DIF = facil
+1 -> APT = -150.0 DIF = medio
+14 -> APT = -150.0 DIF = facil
+5 -> APT = -150.0 DIF = facil
+12 -> APT = -150.0 DIF = facil
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+2 -> APT = -150.0 DIF = medio
+3 -> APT = -3000.0 DIF = facil
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = facil
+0 -> APT = -150.0 DIF = dificil
+7 -> APT = -150.0 DIF = medio
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+2 -> APT = -150.0 DIF = medio
+2 -> APT = 4000.0 DIF = medio
+1 -> APT = -150.0 DIF = medio
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -3000.0 DIF = facil
+1 -> APT = -150.0 DIF = facil
+0 -> APT = -150.0 DIF = facil
+0 -> APT = -150.0 DIF = dificil
+3 -> APT = -150.0 DIF = medio
+5 -> APT = -150.0 DIF = facil
+0 -> APT = -150.0 DIF = dificil
+3 -> APT = -3000.0 DIF = facil
+10 -> APT = -150.0 DIF = medio
+11 -> APT = -50.0 DIF = facil
+2 -> APT = -50.0 DIF = medio
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = facil
+14 -> APT = 4000.0 DIF = facil
+0 -> APT = -150.0 DIF = dificil
+4 -> APT = -150.0 DIF = medio
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = medio
+4 -> APT = -150.0 DIF = medio
+4 -> APT = -50.0 DIF = medio
+8 -> APT = -150.0 DIF = medio
+0 -> APT = -150.0 DIF = dificil
+5 -> APT = -150.0 DIF = facil
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = medio
+2 -> APT = -150.0 DIF = facil
+0 -> APT = -150.0 DIF = dificil
+12 -> APT = -50.0 DIF = facil
+11 -> APT = -50.0 DIF = facil
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+14 -> APT = -50.0 DIF = medio
+0 -> APT = -150.0 DIF = facil
+0 -> APT = -150.0 DIF = dificil
+6 -> APT = -150.0 DIF = facil
+0 -> APT = -150.0 DIF = dificil
+10 -> APT = -150.0 DIF = facil
+2 -> APT = -150.0 DIF = medio
+2 -> APT = -50.0 DIF = medio
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = medio
+9 -> APT = -50.0 DIF = medio
+13 -> APT = -50.0 DIF = medio
+1 -> APT = -150.0 DIF = medio
+8 -> APT = -1000.0 DIF = facil
+6 -> APT = -150.0 DIF = facil
+7 -> APT = -150.0 DIF = facil
+0 -> APT = -150.0 DIF = dificil
+13 -> APT = -3000.0 DIF = facil
+5 -> APT = -150.0 DIF = facil
+0 -> APT = -150.0 DIF = dificil
+3 -> APT = -50.0 DIF = facil
+0 -> APT = -150.0 DIF = dificil
+4 -> APT = -150.0 DIF = medio
+0 -> APT = -150.0 DIF = medio
+6 -> APT = -50.0 DIF = medio
+6 -> APT = -150.0 DIF = medio
+0 -> APT = -150.0 DIF = dificil
+4 -> APT = -3000.0 DIF = facil
+4 -> APT = -150.0 DIF = medio
+8 -> APT = -150.0 DIF = facil
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+11 -> APT = -3000.0 DIF = facil
+7 -> APT = -150.0 DIF = medio
+7 -> APT = -3000.0 DIF = facil
+0 -> APT = -150.0 DIF = medio
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -5000.0 DIF = facil
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+8 -> APT = -150.0 DIF = facil
+13 -> APT = -150.0 DIF = medio
+1 -> APT = -150.0 DIF = medio
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+6 -> APT = -3000.0 DIF = facil
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+1 -> APT = -150.0 DIF = medio
+2 -> APT = 4000.0 DIF = medio
+1 -> APT = -150.0 DIF = medio
+5 -> APT = -150.0 DIF = facil
+1 -> APT = -150.0 DIF = facil
+0 -> APT = -150.0 DIF = medio
+0 -> APT = -3000.0 DIF = facil
+10 -> APT = -150.0 DIF = facil
+2 -> APT = -150.0 DIF = medio
+2 -> APT = -50.0 DIF = medio
+3 -> APT = -50.0 DIF = medio
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = facil
+14 -> APT = -150.0 DIF = facil
+6 -> APT = -3000.0 DIF = facil
+1 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+2 -> APT = -150.0 DIF = facil
+0 -> APT = -150.0 DIF = dificil
+3 -> APT = 4000.0 DIF = facil
+6 -> APT = -150.0 DIF = medio
+12 -> APT = -150.0 DIF = medio
+0 -> APT = -150.0 DIF = dificil
+2 -> APT = -150.0 DIF = medio
+0 -> APT = -150.0 DIF = medio
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = medio
+10 -> APT = -150.0 DIF = facil
+11 -> APT = -150.0 DIF = facil
+10 -> APT = 4000.0 DIF = medio
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+3 -> APT = -150.0 DIF = medio
+0 -> APT = -150.0 DIF = medio
+7 -> APT = -150.0 DIF = facil
+0 -> APT = -3000.0 DIF = facil
+0 -> APT = -150.0 DIF = dificil
+3 -> APT = -150.0 DIF = facil
+1 -> APT = -150.0 DIF = facil
+2 -> APT = -150.0 DIF = medio
+1 -> APT = -150.0 DIF = facil
+0 -> APT = -150.0 DIF = dificil
+5 -> APT = -150.0 DIF = medio
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+3 -> APT = -150.0 DIF = facil
+8 -> APT = -150.0 DIF = facil
+4 -> APT = -150.0 DIF = medio
+0 -> APT = -150.0 DIF = dificil
+12 -> APT = -150.0 DIF = facil
+2 -> APT = -150.0 DIF = medio
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = medio
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = medio
+0 -> APT = -150.0 DIF = dificil
+2 -> APT = -150.0 DIF = medio
+8 -> APT = -150.0 DIF = facil
+0 -> APT = -150.0 DIF = dificil
+6 -> APT = -150.0 DIF = medio
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = medio
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+11 -> APT = -50.0 DIF = medio
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+6 -> APT = -150.0 DIF = medio
+4 -> APT = -3000.0 DIF = facil
+11 -> APT = -150.0 DIF = facil
+0 -> APT = -150.0 DIF = dificil
+4 -> APT = -150.0 DIF = medio
+0 -> APT = -150.0 DIF = dificil
+3 -> APT = -3000.0 DIF = facil
+2 -> APT = -150.0 DIF = facil
+0 -> APT = -5000.0 DIF = facil
+12 -> APT = -150.0 DIF = facil
+5 -> APT = -150.0 DIF = facil
+8 -> APT = -150.0 DIF = facil
+2 -> APT = -150.0 DIF = medio
+0 -> APT = -150.0 DIF = medio
+0 -> APT = -150.0 DIF = dificil
+6 -> APT = -3000.0 DIF = facil
+1 -> APT = 4000.0 DIF = medio
+9 -> APT = -3000.0 DIF = facil
+0 -> APT = -150.0 DIF = dificil
+3 -> APT = -3000.0 DIF = facil
+9 -> APT = -50.0 DIF = facil
+0 -> APT = -150.0 DIF = dificil
+2 -> APT = -150.0 DIF = medio
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = medio
+8 -> APT = -150.0 DIF = medio
+1 -> APT = -150.0 DIF = medio
+0 -> APT = -150.0 DIF = dificil
+12 -> APT = -150.0 DIF = facil
+12 -> APT = -1000.0 DIF = facil
+1 -> APT = -1000.0 DIF = facil
+2 -> APT = -150.0 DIF = medio
+6 -> APT = -3000.0 DIF = facil
+11 -> APT = -3000.0 DIF = facil
+0 -> APT = -150.0 DIF = dificil
+7 -> APT = -150.0 DIF = medio
+8 -> APT = -3000.0 DIF = facil
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+2 -> APT = -150.0 DIF = medio
+0 -> APT = -150.0 DIF = dificil
+7 -> APT = -3000.0 DIF = facil
+7 -> APT = -150.0 DIF = medio
+12 -> APT = 2000.0 DIF = facil
+8 -> APT = -150.0 DIF = medio
+0 -> APT = -150.0 DIF = medio
+0 -> APT = -150.0 DIF = dificil
+6 -> APT = -150.0 DIF = medio
+8 -> APT = -150.0 DIF = medio
+0 -> APT = -150.0 DIF = dificil
+2 -> APT = -150.0 DIF = facil
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+4 -> APT = -3000.0 DIF = facil
+13 -> APT = -3000.0 DIF = facil
+4 -> APT = -3000.0 DIF = facil
+0 -> APT = -150.0 DIF = dificil
+2 -> APT = -3000.0 DIF = facil
+0 -> APT = -150.0 DIF = dificil
+1 -> APT = -150.0 DIF = facil
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+11 -> APT = -50.0 DIF = facil
+0 -> APT = -150.0 DIF = dificil
+13 -> APT = -50.0 DIF = medio
+0 -> APT = -150.0 DIF = dificil
+2 -> APT = -150.0 DIF = medio
+0 -> APT = -150.0 DIF = medio
+2 -> APT = -150.0 DIF = medio
+2 -> APT = -150.0 DIF = medio
+0 -> APT = -150.0 DIF = dificil
+9 -> APT = -150.0 DIF = facil
+0 -> APT = -150.0 DIF = facil
+0 -> APT = -150.0 DIF = dificil
+1 -> APT = -150.0 DIF = facil
+2 -> APT = -150.0 DIF = facil
+0 -> APT = -150.0 DIF = dificil
+1 -> APT = -150.0 DIF = facil
+2 -> APT = -150.0 DIF = facil
+5 -> APT = -150.0 DIF = facil
+2 -> APT = -150.0 DIF = facil
+10 -> APT = -3000.0 DIF = facil
+1 -> APT = -3000.0 DIF = facil
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+2 -> APT = -150.0 DIF = medio
+6 -> APT = -3000.0 DIF = facil
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+4 -> APT = -1000.0 DIF = facil
+3 -> APT = 2000.0 DIF = facil
+0 -> APT = -150.0 DIF = dificil
+12 -> APT = -150.0 DIF = facil
+8 -> APT = -50.0 DIF = dificil
+7 -> APT = 4000.0 DIF = medio
+12 -> APT = -50.0 DIF = dificil
+0 -> APT = -50.0 DIF = dificil
+2 -> APT = 4000.0 DIF = medio
+2 -> APT = 4000.0 DIF = medio
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+8 -> APT = 4000.0 DIF = medio
+0 -> APT = -150.0 DIF = dificil
+3 -> APT = -150.0 DIF = medio
+0 -> APT = -150.0 DIF = dificil
+4 -> APT = 4000.0 DIF = facil
+0 -> APT = -150.0 DIF = dificil
+3 -> APT = -150.0 DIF = medio
+2 -> APT = 4000.0 DIF = medio
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+7 -> APT = -3000.0 DIF = facil
+0 -> APT = -150.0 DIF = medio
+0 -> APT = -150.0 DIF = medio
+0 -> APT = -150.0 DIF = medio
+7 -> APT = -3000.0 DIF = facil
+3 -> APT = -150.0 DIF = medio
+7 -> APT = -150.0 DIF = medio
+0 -> APT = -150.0 DIF = medio
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+4 -> APT = -150.0 DIF = medio
+0 -> APT = -150.0 DIF = dificil
+3 -> APT = -150.0 DIF = medio
+1 -> APT = -150.0 DIF = facil
+0 -> APT = -150.0 DIF = dificil
+7 -> APT = 4000.0 DIF = medio
+0 -> APT = -150.0 DIF = dificil
+10 -> APT = 4000.0 DIF = medio
+4 -> APT = 4000.0 DIF = facil
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = -150.0 DIF = dificil
+11 -> APT = 4000.0 DIF = facil
+0 -> APT = -150.0 DIF = dificil
+0 -> APT = 4000.0 DIF = facil
+1 -> APT = 4000.0 DIF = facil
+3 -> APT = -150.0 DIF = facil
+11 -> APT = -150.0 DIF = facil
+0 -> APT = -150.0 DIF = dificil
+5 -> APT = 4000.0 DIF = facil
+2 -> APT = 4000.0 DIF = medio
+14 -> APT = 4000.0 DIF = medio

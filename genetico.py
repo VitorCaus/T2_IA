@@ -5,6 +5,7 @@ from outraRede.RedeNeural import RedeNeural
 
 
 
+
 TAM_CROMOSSOMO = 180
 
 REDE_GANHOU = 1000
@@ -116,7 +117,7 @@ def torneio():
 def crossover():
     # Cruzamento media
     for j in range(1, tam_populacao):
-        ind1 = torneio()
+        ind1 = 0 if populacao[0][TAM_CROMOSSOMO] >= 1000 else torneio()
         ind2 = torneio()
 
         cromossomo1 = np.array(populacao[ind1])
@@ -136,14 +137,38 @@ def crossover():
 #             print(f"Cromossomo {individuo} sofreu mutação no peso {posicao}")
 #             populacao[individuo][posicao] = random.uniform(-1, 1)   
 
-def mutacao():
-    taxa_mutacao = 0.02
-    for individuo in range(1, tam_populacao):  
-        for posicao in range(TAM_CROMOSSOMO):
-            if random.random() < taxa_mutacao:
-                print(f"Cromossomo {individuo} sofreu mutação no peso {posicao}")
-                populacao[individuo][posicao] = random.uniform(-1, 1)
+# def mutacao():
+#     taxa_mutacao = 0.02
+#     for individuo in range(1, tam_populacao):  
+#         for posicao in range(TAM_CROMOSSOMO):
+#             if random.random() < taxa_mutacao:
+#                 print(f"Cromossomo {individuo} sofreu mutação no peso {posicao}")
+#                 populacao[individuo][posicao] = random.uniform(-1, 1)
 
+def mutacao():
+    individuo = random.randint(1, tam_populacao-1)
+    # peso = random.randint(0, TAM_CROMOSSOMO-1)
+    print(f"Individuo {individuo} sofreu mutação em todos os pesos")
+    # print(f"Individuo {individuo} sofreu mutação no peso {peso}")
+    populacao[individuo][:180] = [random.uniform(-1, 1) for i in range(180)]
+
+# def mutacao():
+#     individuo = random.randint(1, tam_populacao-1)
+#     num_neuronios = random.randint(1, 6)  # Alterar 1-3 neurônios
+#     for _ in range(num_neuronios):
+#         neuronio = random.randint(0, 17)  # Escolhe um neurônio
+#         inicio = neuronio * 10  # 10 pesos por neurônio
+#         populacao[individuo][inicio:inicio+10] = [random.uniform(-1, 1) for i in range(10)]
+#         print(f"Indivíduo {individuo} sofreu mutação no neurônio {neuronio}")
+
+
+def convergencia(aptidao_minima, porcentagem_minima):
+    count = sum(1 for ind in populacao if ind[TAM_CROMOSSOMO] >= aptidao_minima)
+    proporcao = count / tam_populacao
+    print(f"Indivíduos aptos (>= {aptidao_minima}): {count}/{tam_populacao} ({proporcao*100:.2f}%)")
+    with open("convergencias.txt", "a") as file:
+        file.write(f"Individuos aptos (>= {aptidao_minima}): {count}/{tam_populacao} ({proporcao*100:.2f}%) | {proporcao >= porcentagem_minima}\n")
+    return proporcao >= porcentagem_minima
 
 
 # ---------------------------------------------------------------------------------------------------------
@@ -274,7 +299,7 @@ def main():
     tabuleiro = init_tabuleiro()
 
     init()
-    for g in range(300):
+    for g in range(400):
         print(f"\n -==<| Geração: {g} |>==-")
         dificuldade = random_difficulty()
         print(f"Dificuldade para Minimax = {dificuldade.capitalize()}")
@@ -284,13 +309,16 @@ def main():
         print(f"Melhor Rede Elitismo = {melhor} - (APT = {populacao[melhor][TAM_CROMOSSOMO]})")
         
         aptidoes = open("aptidoes.txt", "a")
-        aptidoes.write(f"{melhor} -> APT = {populacao[melhor][TAM_CROMOSSOMO]}\n")
+        aptidoes.write(f"{melhor} -> APT = {populacao[melhor][TAM_CROMOSSOMO]} DIF = {dificuldade}\n")
         aptidoes.close()
 
+        if(convergencia(1000, 0.7)):
+            print("\n-+++<| CONVERGENCIA |>+++-\n")
+            break;
         crossover()
         populacao = [row[:] for row in intermediaria]
-        aleatorio = random.randint(0, 9)
-        if aleatorio <= 2:
+        taxa_mutacao = random.random()
+        if taxa_mutacao <= 0.2:
             print("\n===< MUTAÇÃO >===")
             mutacao()
     # print_matriz()

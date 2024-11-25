@@ -13,7 +13,7 @@ class Neuronio:
         # for i in range(len(entradas)):
         #     soma += x_linha[i] * self.pesos[i]
 
-        # return 1 / (1 + math.exp (-soma)) # sigmoid
+        # return 1 / (1 + math.exp(-soma)) # sigmoid
         return math.tanh(soma) # tangente hiperbolica
 
 class RedeNeural:

@@ -2,9 +2,6 @@ import tkinter as tk
 import random
 from outraRede.RedeNeural import RedeNeural
 
-# opponent = None
-neural_network = None
-
 
 def minimax(board, depth, is_maximizing):
     if check_winner(board, "O"):
@@ -63,6 +60,7 @@ def is_full(board):
     return all(cell != " " for row in board for cell in row)
 
 def computer_move():
+    global total_mlp_movements, correct_mlp_movements
 
     if opponent == "minimax":
         if difficulty == "facil":
@@ -94,34 +92,41 @@ def computer_move():
         #     result_label.config(text="Empate!")
         #     disable_buttons()
     elif opponent == "mlp":
-        print(f"Tabuleiro enviado {translate_board(board)}")
+        print(f"\nTabuleiro enviado {translate_board(board)}")
         mlp_move = neural_network.propagacao(translate_board(board))
         move = translate_mlp_move(mlp_move)
         print(f"Movimento = {mlp_move} --> {translate_mlp_move(mlp_move)}")
 
+        total_mlp_movements += 1
+        correct_mlp_movements += 1 if board[move[0]][move[1]] == " " else 0 
+        print(f"\nAcurácia = {(correct_mlp_movements/total_mlp_movements)* 100:.2f}%")
+        print(f"\nMovimentos totais = {total_mlp_movements} | Movimentos corretos = {correct_mlp_movements}")
         computer_board_positioning(move)
     else: 
         print("ERRO: oponente inexistente")
 
 def computer_board_positioning(move):
-    board[move[0]][move[1]] = "O"
-    buttons[move[0]][move[1]].config(text="O", state="disabled")
+    if board[move[0]][move[1]] == " ":
+        board[move[0]][move[1]] = "O"
+        buttons[move[0]][move[1]].config(text="O", state="disabled")
 
-    if check_winner(board, "O"):
-        result_label.config(text="O computador venceu!")
-        disable_buttons()
-    elif is_full(board):
-        result_label.config(text="Empate!")
-        disable_buttons()
+        if check_winner(board, "O"):
+            result_label.config(text="O computador venceu!")
+            disable_buttons()
+        elif is_full(board):
+            result_label.config(text="Empate!")
+            disable_buttons()
+    else: 
+        print(f"\n-===<| MOVIMENTO INCORRETO DA REDE {move} = {board[move[0]][move[1]]}|>===-\n")
 
 def translate_board(board):
     mlp_board = [board[i][j] for i in range(3) for j in range(3)]
 
     for i in range(9):
         if mlp_board[i] == "X":
-            mlp_board[i] = 1
-        elif mlp_board[i] == "O":
             mlp_board[i] = -1
+        elif mlp_board[i] == "O":
+            mlp_board[i] = 1
         else:
             mlp_board[i] = 0
     return mlp_board
@@ -162,7 +167,9 @@ def player_click(i, j):
             computer_move()
 
 def start_game():
-    global board, buttons, result_label
+    global board, buttons, result_label, total_mlp_movements, correct_mlp_movements 
+    total_mlp_movements = 0
+    correct_mlp_movements = 0
 
     board = [[" " for _ in range(3)] for _ in range(3)]
 
