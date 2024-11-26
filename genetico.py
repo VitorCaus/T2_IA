@@ -13,14 +13,6 @@ MINIMAX_GANHOU = -50
 EMPATE = 0
 POSICAO_INVALIDA_REDE = -1000
 
-tam_populacao = None
-populacao = None 
-intermediaria = None
-
-#dificuldade para minimax
-dificuldade = ""
-
-tabuleiro = []
 
 def init():
     for i in range(tam_populacao):
@@ -108,7 +100,6 @@ def get_mais_apto():
 
 
 def torneio():
-    # ind1, ind2 = random.sample(range(0, tam_populacao), 2)
     ind1 = random.randint(0, tam_populacao-1)
     ind2 = random.randint(0, tam_populacao-1)
     return ind1 if populacao[ind1][TAM_CROMOSSOMO] > populacao[ind2][TAM_CROMOSSOMO] else ind2
@@ -124,7 +115,6 @@ def crossover():
         cromossomo2 = np.array(populacao[ind2])
 
         intermediaria[j] = (cromossomo1 + cromossomo2)/2
-
 
 # def mutacao():
 #     quant = random.randint(1, 5)
@@ -154,12 +144,20 @@ def mutacao():
 
 # def mutacao():
 #     individuo = random.randint(1, tam_populacao-1)
-#     num_neuronios = random.randint(1, 6)  # Alterar 1-3 neurônios
+#     num_neuronios = random.randint(1, 3)
 #     for _ in range(num_neuronios):
-#         neuronio = random.randint(0, 17)  # Escolhe um neurônio
-#         inicio = neuronio * 10  # 10 pesos por neurônio
+#         neuronio = random.randint(0, 17)
+#         inicio = neuronio * 10
 #         populacao[individuo][inicio:inicio+10] = [random.uniform(-1, 1) for i in range(10)]
 #         print(f"Indivíduo {individuo} sofreu mutação no neurônio {neuronio}")
+
+# def mutacao():
+#     individuo = random.randint(1, tam_populacao-1)
+#     for i in range (0, TAM_CROMOSSOMO, 10):
+#         peso = random.randint(0,9)
+#         # populacao[individuo][peso+i] = random.uniform(-1, 1)
+#         populacao[individuo][peso+i] *= -1
+#         print(f"Individuo {individuo} teve mutação do peso {peso+i}")
 
 
 def convergencia(aptidao_minima, porcentagem_minima):
@@ -299,7 +297,7 @@ def main():
     tabuleiro = init_tabuleiro()
 
     init()
-    for g in range(400):
+    for g in range(100):
         print(f"\n -==<| Geração: {g} |>==-")
         dificuldade = random_difficulty()
         print(f"Dificuldade para Minimax = {dificuldade.capitalize()}")
@@ -329,7 +327,7 @@ def main():
     print(f"\n\n-- MAIS APTO (APTIDÃO = {melhor[TAM_CROMOSSOMO]})--\n\n")
     melhor = melhor[:-1]
 
-    backup_melhor = open("bestMLP.txt", "w")
+    backup_melhor = open("bestMLP1.txt", "w")
     for peso in melhor:
         backup_melhor.write(f"{peso}\n")
     backup_melhor.close()
@@ -338,8 +336,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-# TODO 
-# adicionar verificação de convergencia
-# <<<<transformar mais apta em MLP -> só usar nosso MLP direto>>>>>
-# verificar aprendizado, talvez intensificar mutação
