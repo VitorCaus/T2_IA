@@ -10,7 +10,8 @@ TAM_CROMOSSOMO = 180
 
 REDE_GANHOU = 1000
 MINIMAX_GANHOU = -50
-EMPATE = 0
+EMPATE = 400
+QTD_JOGADAS = 25
 POSICAO_INVALIDA_REDE = -1000
 
 
@@ -65,14 +66,14 @@ def aptidao(individuo):
             computer_move()#tabuleiro tambem atualizado nessa funcao
 
             if(check_winner(tabuleiro, -1)):
-                aptidao = MINIMAX_GANHOU
+                aptidao = MINIMAX_GANHOU + QTD_JOGADAS * i
                 print("TABULEIRO (MINIMAX VENCE):\n")
                 print_board()
                 break
         print(f"TABULEIRO (RODADA {i}):\n")
         print_board()
     if aptidao == 0 and is_full(tabuleiro):
-        aptidao = EMPATE
+        aptidao = EMPATE + QTD_JOGADAS * i
         print("TABULEIRO (EMPATE):\n")
         print_board()
 
@@ -310,13 +311,13 @@ def main():
         aptidoes.write(f"{melhor} -> APT = {populacao[melhor][TAM_CROMOSSOMO]} DIF = {dificuldade}\n")
         aptidoes.close()
 
-        if(convergencia(1000, 0.7)):
+        if(convergencia(800, 0.7)):
             print("\n-+++<| CONVERGENCIA |>+++-\n")
             break;
         crossover()
         populacao = [row[:] for row in intermediaria]
         taxa_mutacao = random.random()
-        if taxa_mutacao <= 0.2:
+        if taxa_mutacao <= 0.1:
             print("\n===< MUTAÇÃO >===")
             mutacao()
     # print_matriz()
@@ -327,7 +328,7 @@ def main():
     print(f"\n\n-- MAIS APTO (APTIDÃO = {melhor[TAM_CROMOSSOMO]})--\n\n")
     melhor = melhor[:-1]
 
-    backup_melhor = open("bestMLP1.txt", "w")
+    backup_melhor = open("bestMLP.txt", "w")
     for peso in melhor:
         backup_melhor.write(f"{peso}\n")
     backup_melhor.close()
